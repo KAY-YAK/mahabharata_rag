@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  db:
+    image: tensorchord/vchord-suite:pg17-20250815
+    container_name: mahabharat-db
+    restart: always
+    environment:
+      - POSTGRES_USER=myuser
+      - POSTGRES_PASSWORD=mypassword
+      - POSTGRES_DB=mahabharat_db
+    ports:
+      - "6543:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./tokenizers:/tokenizers
+
+volumes:
+  postgres_data:

@@ -1,0 +1,27 @@
+# requirements.txt for mahabharata_rag
+
+# Core Framework for the Web UI
+streamlit==1.36.0
+
+# LangChain Core Ecosystem
+langchain==0.2.5
+langchain-community==0.2.6
+langchain-huggingface==0.0.3
+
+# Hugging Face Ecosystem for Models and Embeddings
+transformers==4.41.2
+sentence-transformers==3.0.1
+huggingface_hub==0.23.4
+tokenizers==0.19.1
+
+# Vector Database for storing embeddings
+faiss-cpu==1.8.0
+# Use 'faiss-gpu' instead if you have a compatible NVIDIA GPU and CUDA setup
+# faiss-gpu==1.8.0
+
+# Deep Learning Framework (required by Hugging Face and sentence-transformers)
+torch==2.3.1
+
+# Utilities
+python-dotenv==1.0.1      
+tiktoken==0.7.0           
