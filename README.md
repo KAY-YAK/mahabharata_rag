@@ -8,7 +8,9 @@ The **mahabharata_rag** is a tool that lets you ask questions about the Mahabhar
 3. Run `constraints.sql` 
 4. Install everything from `requirements.txt`
 5. Extract and load data from `mahabharat_db_dump.zip`
-6. Open the `src/app/retrieval/rag_pipeline.py` and replace query in line 71.
+6. Download LM Studio
+7. Get Lamma 3.1 8b model and start server.
+8. Open the `src/app/retrieval/rag_pipeline.py` and replace query in line 71.
  
  **Stack used**
  1. Postgres for vector database
